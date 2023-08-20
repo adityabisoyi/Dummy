@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Titillium+Web:wght@400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    background: #09131b;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* header */
+.header {
+    background: #122331;
+    position: relative;
+    /* max-width: 80vw; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 1rem 2rem;
+    z-index: 1;
+}
+
+.header a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.header ul {
+    list-style: none;
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+}
+
+.menu-items li {
+    padding: 0.5rem 1rem;
+    transition: background 0.3s ease-in-out;
+    margin: 0 0.7em;
+}
+
+.menu-items li:hover {
+    text-decoration: underline;
+}
+
+/* mega menu  */
+.mega-menu {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    top: 117px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+}
+/* .menu-2 {
+    left: 10;
+} */
+
+.mega-menu .content {
+    background: #293d4d;
+    padding: 0.5em 1rem;
+    display: flex;
+    /* gap: 1rem; */
+    width: 100%;
+    justify-content: space-evenly;
+}
+.mega-menu .double-layer{
+    display: flex;
+    flex-direction: column;
+}
+.content .layer {
+    background: #293d4d;
+    padding: 0.5em 1rem;
+    display: flex;
+    /* gap: 1rem; */
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.content .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.2rem;
+}
+
+.content .col h2 {
+    color: #ff652f;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: bold;
+}
+
+.col .mega-links li,
+.col .mega-links li a {
+    padding: 0.3rem 0;
+}
+
+.menu-items li:hover .mega-menu {
+    top: 65px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.main-body {
+    margin: 2em;
+    line-height: 2;
+}
