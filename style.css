@@ -111,6 +111,55 @@ body {
 }
 
 .main-body {
-    margin: 2em;
+    padding: 2em;
+    margin-top: 2rem;
     line-height: 2;
 }
+
+
+
+
+/* hiding desktop header  */
+.mobile-header{
+    display: none;
+}
+.mobile-sidebar{
+    display: none;
+}
+.slide-in{
+    left: -90%!important;
+}
+
+@media screen and (max-width: 768px){
+    .header{
+        display: none;
+    }
+    .mobile-header{
+        display: flex;
+        background-color: #122331;
+        padding: 1rem;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 50px;
+        border-bottom: 2px solid red;
+    }
+    .mobile-sidebar{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 50px;
+        left: 0;
+        width: 90%;
+        height: 100vh;
+        overflow-y: scroll;
+        background-color: #122331;
+        transition: all 0.25s ease-in;
+    }
+}
+
+.mobile-sidebar ul a{
+    color: white;
+}
+
